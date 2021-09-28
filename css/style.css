@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,300;1,400&family=Ubuntu:wght@500&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -17,9 +18,25 @@ a {
   margin: 0 auto;
 }
 
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
 #sectionTablo {
   height: 100vh;
-  background-image: url(../img/ID8A1278-HDR.jpg);
+  background-image: url(../img/imeg0.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: center;
@@ -57,6 +74,9 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-style: italic;
 }
 
 .navBarbtn {
@@ -121,6 +141,20 @@ a {
   border-radius: 10px;
 }
 
+.tabs-navi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
 /* Style the tab content */
 .tabcontent {
   display: none;
@@ -128,8 +162,6 @@ a {
   background-color: aliceblue;
   opacity: 0.9;
   border-radius: 10px;
-  right: 29%;
-  position: absolute;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
@@ -194,9 +226,30 @@ a {
           justify-content: space-evenly;
 }
 
-.progress {
-  display: -ms-grid;
-  display: grid;
+.containerfacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.sectionfacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .infoProgress {
@@ -216,14 +269,17 @@ a {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  font-family: "Skyfont", sans-serif;
+  text-shadow: 4px 4px 4px #aaa;
   font-size: 2rem;
 }
 
 .imgprogresa {
-  width: 200px;
   height: 200px;
+  width: 200px;
+  border-radius: 150px;
 }
-.imgprogresa :hover {
+.imgprogresa:hover {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   transform: scale(1.3);
@@ -231,6 +287,222 @@ a {
   -moz-transform: scale(1.3);
   -ms-transform: scale(1.3);
   -o-transform: scale(1.3);
+  overflow: hidden;
+}
+
+.mt5 {
+  margin-top: 15px;
+}
+
+.Store-Shop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.Store-Title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.Store-ShopImg {
+  margin-top: 30px;
+  border-radius: 20px;
+  width: 500px;
+  margin-left: 30px;
+}
+.Store-ShopUpper {
+  font-family: "Montserrat", sans-serif;
+}
+.Store-ShopUpperline {
+  background-color: black;
+  width: 50px;
+  height: 1px;
+}
+.Store-Shoplower {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  font-style: italic;
+  color: black;
+}
+.Store-ul {
+  margin-top: 10px;
+}
+.Store-li {
+  margin-top: 10px;
+}
+
+.sectionInfo-GeneralVip {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 40px;
+}
+.sectionInfo-UpperText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Montserrat", sans-serif;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.sectionInfo-LowwerText {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  font-style: italic;
+  color: black;
+}
+.sectionInfo-LowwerText_P {
+  margin-left: 10px;
+}
+.sectionInfo-ofService {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.sectionInfo-ofServiceli {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+.sectionInfo-ofServicetitle {
+  margin-left: 20px;
+}
+.sectionInfo-Price {
+  width: 90%;
+  height: 30px;
+  border-bottom: 1px solid #e3e3e3;
+  margin-bottom: 20px;
+}
+.sectionInfo-PriceVIP {
+  border: 1px solid #e3e3e3;
+}
+.sectionInfo-PriceVIPname {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px;
+  border-bottom: 1px solid #e3e3e3;
+}
+.sectionInfo-PriceVIPnameTextSize {
+  margin: 10px;
+}
+.sectionInfo-PriceVIPnameText {
+  width: 280px;
+  margin: 10px;
+  color: #767676;
+}
+.sectionInfo-nameTerminal {
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 600;
+}
+.sectionInfo-nameFly {
+  width: 160px;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+.sectionInfo-VipInfo {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.sectionInfo-RulsInfo {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-left: 1px solid #e3e3e3;
+}
+.sectionInfo-PriceInfo {
+  font-size: 0.7rem;
+}
+.sectionInfo-btnVip {
+  margin-bottom: 10px;
+}
+.sectionInfo-Img {
+  width: 500px;
+  height: 300px;
+  margin-top: 10%;
+  margin-left: 30px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.RulsInfoBorder {
+  border: none;
+}
+
+.btnBuyVip {
+  width: 150px;
+  height: 50px;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid orange;
+  font-size: 20px;
+  background-color: white;
+}
+.btnBuyVip:hover {
+  -webkit-box-shadow: 2.5px 2.5px 0 2.5px white, -2.5px -2.5px 0 2.5px white, 0 0 0 2px white inset, 10px 10px 0 10px orange, -10px -10px 0 10px orange;
+          box-shadow: 2.5px 2.5px 0 2.5px white, -2.5px -2.5px 0 2.5px white, 0 0 0 2px white inset, 10px 10px 0 10px orange, -10px -10px 0 10px orange;
+  transition: 0.75s;
+  -webkit-transition: 0.75s;
+  -moz-transition: 0.75s;
+  -ms-transition: 0.75s;
+  -o-transition: 0.75s;
 }
 
 @media (max-width: 1920px) {
@@ -238,11 +510,11 @@ a {
     width: 1920px;
   }
 
-  .tabcontent {
-    right: 38%;
-  }
-
   .container {
     max-width: 1920px;
   }
-}
+
+  .Store-ShopImg {
+    width: 600px;
+  }
+}/*# sourceMappingURL=style.css.map */

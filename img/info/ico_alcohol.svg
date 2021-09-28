@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="37px" height="37px" viewBox="0 0 37 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>ico_alcohol</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-654.000000, -462.000000)" stroke="#252248" stroke-width="1.5">
+            <g id="ico_alcohol" transform="translate(655.000000, 463.000000)">
+                <path d="M5.77693846,4.8496 L5.22178462,1.29844615" id="Stroke-1"></path>
+                <path d="M7.80774615,12.4343154 C6.82882308,12.7433923 5.75566923,12.8010077 4.68413077,12.5479308 C1.51205385,11.8021615 -0.453869231,8.62631538 0.292976923,5.45531538 C1.03928462,2.28323846 4.21566923,0.317315385 7.38720769,1.06416154 C9.45382308,1.55093077 11.0083615,3.06885385 11.6340538,4.94485385" id="Stroke-3"></path>
+                <path d="M9.97580769,2.89132308 L7.42942308,5.42101538" id="Stroke-5"></path>
+                <path d="M4.24226923,7.62445385 L0.895192308,9.12783846" id="Stroke-7"></path>
+                <path d="M5.50404615,8.71343846 L4.59996923,11.9587462" id="Stroke-9"></path>
+                <path d="M4.32034615,5.80558462 L1.41103846,4.16489231" id="Stroke-11"></path>
+                <polyline id="Stroke-13" stroke-linecap="round" stroke-linejoin="round" points="19.6964923 23.0920846 32.2873385 7.4837 7.07926154 7.4837 19.6701077 23.0920846"></polyline>
+                <path d="M19.6833538,23.0920846 L19.6833538,34.8720077" id="Stroke-15" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M26.0155538,34.9455615 L13.3509385,34.9455615" id="Stroke-17" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M10.7816692,11.7848769 L19.4352846,11.7848769" id="Stroke-19"></path>
+                <path d="M22.1790154,11.7848769 L28.9458615,11.7848769" id="Stroke-21"></path>
+                <polyline id="Stroke-23" stroke-linecap="round" stroke-linejoin="round" points="19.6681154 17.9519846 27.0778846 0.134292308 34.5770385 1.23006154"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

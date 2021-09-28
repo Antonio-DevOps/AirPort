@@ -10,16 +10,23 @@
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 <!-- // Add the new slick-theme.css if you want the default styling -->
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Montserrat:ital,wght@0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/favicon_hrkaero.png" type="image/x-icon">
     <title>AirPort</title>
 </head>
 <body>
-<section class="container" id="sectionTablo" >
+<section class="container" id="sectionTablo">
     <header class="headerTerminal">
         <div class="logo"><a href="https://hrk.aero/" target="_blank"><img class="logoimg" src="./img/Kharkiv_airport_logo.svg.png" alt="logo"></a></div>
         <nav class="navBar">
             <li class="navBarbtn"><a href="#sectionTravel" class="navBar" >Travel</a></li>
-            <li class="navBarbtn"><a href="#" class="navBar" >Facts</a></li>
-            <li class="navBarbtn"><a href="#" class="navBar" >Store(Duty free)</a></li>
+            <li class="navBarbtn"><a href="#FactsOfAirPort" class="navBar" >Facts</a></li>
+            <li class="navBarbtn"><a href="#sectionStore" class="navBar" >Store(Duty Free)</a></li>
             <li class="navBarbtn"><a href="#" class="navBar" >Info</a></li>
             <li class="navBarbtn"><a href="#" class="navBar" >B2B</a></li>
         </nav>
@@ -28,6 +35,7 @@
         <button class="tablinks" onclick="opentab(event, 'Departure')"> <img src="./img/departure_icon.svg" alt="Вылет"></button>
         <button class="tablinks" onclick="opentab(event, 'Arrival')"> <img src="./img/arrival_icon.svg" alt="Прилёт"></button>
       </div>
+      <div class="tabs-navi">
       <div id="Departure" class="tabcontent">
         <table class="tableFlight">
             <tbody>
@@ -65,11 +73,11 @@
                 </td>
                 <td class="flightStatus"><a href="#">По расписанию</a></td>
             </tr>
-            
             </tbody>
         </table>
       </div>
-      
+      </div>
+      <div class="tabs-navi">
       <div id="Arrival" class="tabcontent">
         <table class="tableFlight">
             <tbody>
@@ -107,6 +115,8 @@
             </tbody>
         </table>
       </div>
+    </div>
+</div>
 </section>
 <div class="banner">
     <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1440 180">
@@ -184,16 +194,152 @@
                 </div>
     </div>
 </section>
-<section class="container FactsOfAirPort">
-<div class="progress containerDestinations"><div class="imgprogresa">
-    <img class="imgprogresa" src="./img/Facts-Progress/air-destinations.svg" alt="Destinations"></div>
-    <div class="infoProgress"><h4 class="infotitle">+35</h4><h6>Аэропортов</h6></div></div>
-<div class="progress containerPassengers"><div class="imgprogresa">
-    <img class="imgprogresa" src="./img/Facts-Progress/passenger.svg" alt="Passengers"></div>
-    <div class="infoProgress"><h4 class="infotitle">+1650000</h4><h6>Пассажиров</h6></div></div>
-<div class="progress containerTotalflights"><div class="imgprogresa">
-    <img class="imgprogresa" src="./img/Facts-Progress/TotalFlights.svg" alt="Flights"></div>
-    <div class="infoProgress"><h4 class="infotitle">+2100</h4><h6>Перелётов</h6></div></div>
+<section class="container FactsOfAirPort" id="FactsOfAirPort">
+<div class="containerfacts container">
+    <div class="sectionfacts">
+    <div class="imgprogresa">
+    <img class="imgprogresa" src="./img/Facts-Progress/airport-flights.jpg" alt="Destinations"></div>
+    <!-- <div class="infoProgress"><h4 class="infotitle">+35</h4><h6>Аэропортов</h6></div></div> -->
+    <div class="infoProgress">
+        <img src="./img/Facts-Progress/+35.png" alt="35destinations">
+        <img class="mt5" src="./img/Facts-Progress/AirPort.png" alt="textAirports">
+    </div>
+</div>
+    <div class="sectionfacts">
+    <div class="imgprogresa">
+    <img class="imgprogresa" src="./img/Facts-Progress/passengers.png" alt="Passengers"></div>
+    <!-- <div class="infoProgress"><h4 class="infotitle">+1650000</h4><h6>Пассажиров</h6></div></div> -->
+    <div class="infoProgress">
+        <img src="./img/Facts-Progress/+1650000.png" alt="totalPassengers">
+        <img class="mt5" src="./img/Facts-Progress/Passengerstext.png" alt="textPassengers">
+    </div>
+</div>
+    <div class="sectionfacts">
+    <div class="imgprogresa">
+    <img class="imgprogresa" src="./img/Facts-Progress/aircraft.png" alt="Flights"></div>
+    <!-- <div class="infoProgress"><h4 class="infotitle">+2100</h4><h6>Перелётов</h6></div></div> -->
+    <div class="infoProgress">
+        <img src="./img/Facts-Progress/+2100.png" alt="35destinations">
+        <img class="mt5" src="./img/Facts-Progress/flights.png" alt="textAirports">
+    </div>
+</div>
+</div>
+</section>
+<section class="container" id="sectionStore">
+    <div class="container Store-Shop ba-col-12">
+        <div class="ba-col-6 Store-ShopText">
+            <div class="Store-Title">
+            <h4 class="Store-ShopUpper">DUTY FREE</h4>
+            <div class="Store-ShopUpperline"></div>
+        </div>
+            <p class="Store-Shoplower"> There is a tax-free shop called Pavo Duty Free located in the departure hall of international flights in Terminal A at the airport “Kharkiv”. 
+                You can make purchases after passing the pre-flight formalities. 
+                You can also order duty free goods on departure from the VIP Terminal.</p>
+                <p class="Store-Shoplower">The shop offers a wide range of the following goods of famous world and Ukrainian brands:</p>
+                <ul class="Store-Shoplower Store-ul">
+                    <li class="Store-li"> - Alcoholic beverages</li>
+                    <li class="Store-li"> - Food products, including caviar, confectionery, honey</li>
+                    <li class="Store-li"> - Perfumery and cosmetics</li>
+                    <li class="Store-li"> - Accessories</li>
+                    <li class="Store-li"> - Jewelry</li>
+                    <li class="Store-li"> - Toys</li>
+                    <li class="Store-li"> - Electronics for travelers</li>
+                </ul>
+                <p class="Store-Shoplower">You can get acquainted with the assortment of Duty Free goods before departure on the <a class="Store-Shoplower" href="https://pavo.ua/en/">website</a>.</p>
+        </div>
+        <div class="ba-col-6 Store-ShopImg">
+            <img class="Store-ShopImg" src="./img/Store/images_DlyaStatey_DF.png" alt="Duty Free">
+        </div>
+    </div>
+</section>
+<section class="container sectionInfo">
+<div class="container ba-col-12 sectionInfo-GeneralVip">
+    <div class="ba-col-6 sectionInfo-Text">
+        <div class="sectionInfo-UpperText">
+            <h4>VIP SERVICE</h4>
+        <div class="Store-ShopUpperline"></div>
+        </div>
+        <div class="sectionInfo-LowwerText">
+            <p>Includes access to a separate VIP terminal (terminal B) and a personal assistant service during all pre-flight procedures.</p>
+                <p class="sectionInfo-LowwerText_P">Included services:</p>
+                <ul class="sectionInfo-ofService" >
+                    <li class="sectionInfo-ofServiceli">
+                        <img src="./img/info/ico_parking.svg" alt="Parking">
+                        <span class="sectionInfo-ofServicetitle">Parking</span>
+                    </li>
+                    <li class="sectionInfo-ofServiceli">
+                        <img src="./img/info/ico_food.svg" alt="Gourmet meals">
+                        <span class="sectionInfo-ofServicetitle">Gourmet meals</span>
+                    </li>
+                    <li class="sectionInfo-ofServiceli">
+                        <img src="./img/info/ico_alcohol.svg" alt="Strong and light alcoholic beverages">
+                        <span class="sectionInfo-ofServicetitle">Strong and light alcoholic beverages</span>
+                    </li>
+                    <li class="sectionInfo-ofServiceli">
+                        <img src="./img/info/ico_beer-1.svg" alt="Beer and wine">
+                        <span class="sectionInfo-ofServicetitle">Beer and wine</span>
+                    </li>
+                    <li class="sectionInfo-ofServiceli">
+                        <img src="./img/info/ico_board.svg" alt="Flight monitors">
+                        <span class="sectionInfo-ofServicetitle">Flight monitors</span>
+                    </li>
+                    <li class="sectionInfo-ofServiceli">
+                        <img src="./img/info/ico_fiwi.svg" alt="Wi-Fi">
+                        <span class="sectionInfo-ofServicetitle">Wi-Fi</span>
+                    </li>
+                </ul>
+                <div class="sectionInfo-PriceVIP">
+                    <div class="sectionInfo-PriceVIPname">
+                        <div class="sectionInfo-nameTerminal">VIP service at Terminal B</div>
+                        <div class="sectionInfo-nameFly">Domestic, International arrival</div>
+                    </div>
+                    <div class="sectionInfo-PriceVIPnameTextSize">
+                    <span class="sectionInfo-PriceVIPnameText">To make an arrival comfortable, 
+                        an assistant will take care of your transfer to the VIP terminal, 
+                        luggage, and rapid passage through border control.
+                    </span>
+                </div>
+                    <div class="center sectionInfo-VipInfo">
+                        <div class="sectionInfo-Price center">
+                        <span>Price</span>
+                    </div>
+                    <div class="ba-col-12 center">
+                    <div class="ba-col-4 center sectionInfo-RulsInfo RulsInfoBorder">
+                        <div class="sectionInfo-TotalPrice">
+                            ₴2850.00
+                        </div>
+                        <p class="sectionInfo-PriceInfo">
+                            Adult
+                        </p>
+                    </div>
+                    <div class="ba-col-4 center sectionInfo-RulsInfo">
+                        <div class="sectionInfo-TotalPrice">
+                            ₴1425.00
+                        </div>
+                        <p class="sectionInfo-PriceInfo">
+                            Child (2-12)
+                        </p>
+                    </div>
+                    <div class="ba-col-4 center sectionInfo-RulsInfo">
+                        <div class="sectionInfo-TotalPrice">
+                            ₴0.00
+                        </div>
+                        <p class="sectionInfo-PriceInfo">
+                            Infant (0-2)
+                        </p>
+                    </div>
+                </div>
+                </div>
+                <div class="center mt5 sectionInfo-btnVip">
+                <a class="btnBuyVip" href="#">Buy</a>
+            </div>
+                </div>
+        </div>
+    </div>
+    <div class="ba-col-6 sectionInfo-Img">
+        <img src="./img/info/VipTerminal.jpg" alt="VipTerminal" class="sectionInfo-Img">
+    </div>
+</div>
 </section>
 </body>
 <script type="text/javascript" src="./js/slick.jquery.json"></script>

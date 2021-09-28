@@ -1,3 +1,8 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,300;1,400&family=Ubuntu:wght@500&display=swap');
+
+
+// ===========================================================Fonts===============================
 $colorBar: aqua;
 $container: 1170px;
 
@@ -17,9 +22,16 @@ a{
   padding: 0 15px;
   margin: 0 auto; 
 }
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+}
 #sectionTablo{
     height: 100vh;
-    background-image: url(../img/ID8A1278-HDR.jpg);
+    background-image: url(../img/imeg0.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: center;
@@ -44,6 +56,9 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-style: italic;
 }
 .navBarbtn{
     margin-right: 35px;
@@ -99,7 +114,12 @@ a{
     background-color: #ccc;
     border-radius: 10px;
   }
-  
+  .tabs-navi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
   /* Style the tab content */
   .tabcontent {
     display: none;
@@ -107,8 +127,6 @@ a{
     background-color: aliceblue;
     opacity: 0.9;
     border-radius: 10px;
-    right: 29%;
-    position: absolute;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
@@ -156,10 +174,16 @@ a{
   align-items: center;
   justify-content: space-evenly;
 }
-
-.progress{
-  display: grid;
-  
+.containerfacts{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+.sectionfacts{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .infoProgress{
   display: flex;
@@ -168,30 +192,218 @@ a{
   align-items: center;
   justify-content: center;
   align-content: center;
+  font-family: 'Skyfont', sans-serif;
+  text-shadow: 4px 4px 4px #aaa;
   font-size: 2rem;
 }
 
 .imgprogresa{
-  width: 200px;
   height: 200px;
-  & :hover{
-    transition: all .2s ease-in-out;
-    transform: scale(1.3);
-    -webkit-transform: scale(1.3);
-    -moz-transform: scale(1.3);
-    -ms-transform: scale(1.3);
-    -o-transform: scale(1.3);
+  width: 200px;
+  border-radius: 150px;
+  &:hover{
+  transition: all .2s ease-in-out;
+  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
+  overflow: hidden;
 }
 }
+.mt5{
+  margin-top: 15px;
+}
+// ===========================================Section Store=====================================================================
+.Store{
+  &-Shop{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  &-Title{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+  }
+  &-ShopImg{
+    margin-top: 30px;
+    border-radius: 20px;
+    width: 500px;
+    margin-left: 30px;
+  }
+  &-ShopUpper{
+    font-family: 'Montserrat', sans-serif;
+  }
+  &-ShopUpperline{
+    background-color: black;
+    width: 50px;
+    height: 1px;
+  }
+  &-Shoplower{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    font-style: italic;
+    color: black;
+  }
+  &-ul{
+    margin-top: 10px;
+  }
+  &-li{
+    margin-top: 10px;
+  }
+}
+// ==============================End store section=======================
+// =================================================Section_Facts===========================================
+.sectionInfo{
+  &-GeneralVip{
+    display: flex;
+    margin-bottom: 40px;
+  }
+  &-UpperText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    flex-direction: column;
+  }
+  &-LowwerText{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    font-style: italic;
+    color: black;
+  }
+  &-LowwerText_P{
+    margin-left: 10px;
+  }
+  &-ofService{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  &-ofServiceli{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  &-ofServicetitle{
+    margin-left: 20px;
+  }
+  &-Price{
+    width: 90%;
+    height: 30px;
+    border-bottom: 1px solid #e3e3e3;
+    margin-bottom: 20px;
+  }
+  &-PriceVIP{
+    border: 1px solid #e3e3e3;
+  }
+  &-PriceVIPname{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    border-bottom: 1px solid #e3e3e3;
+  }
+  &-PriceVIPnameTextSize{
+    margin: 10px;
+  }
+  &-PriceVIPnameText{
+    width: 280px;
+    margin: 10px;
+    color: #767676;
+  }
+  &-nameTerminal{
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 600;
+  }
+  &-nameFly{
+    width: 160px;
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+  &-VipInfo{
+    flex-direction: column;
+  }
+  &-RulsInfo{
+    flex-direction: column;
+    border-left: 1px solid #e3e3e3;
+  }
+  &-PriceInfo{
+    font-size: .7rem;
+  }
+  &-btnVip{
+    margin-bottom: 10px;
+  }
+  &-Img{
+    width: 500px;
+    height: 300px;
+    margin-top: 10%;
+    margin-left: 30px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+}
+.RulsInfoBorder{
+  border: none;
+}
+.btnBuyVip{
+  width: 150px;
+  height: 50px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid orange;
+  font-size: 20px;
+  background-color: white;
+  &:hover{
+    box-shadow: 2.5px 2.5px 0 2.5px white, -2.5px -2.5px 0 2.5px white, 0 0 0 2px white inset, 10px 10px 0 10px orange, -10px -10px 0 10px orange;
+    transition: 0.75s  ;
+    -webkit-transition: 0.75s  ;
+    -moz-transition: 0.75s  ;
+    -ms-transition: 0.75s  ;
+    -o-transition: 0.75s  ;
+}
+}
+// .btnBuyVip{
+//     width: 150px;
+//     height: 50px;
+//     color: black;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     border-radius: 10px;
+//     overflow: hidden;
+//     border: 2px solid orange;
+//     &:hover{
+//     background-color: orange;
+//     color: white;
+//     transition: all .2s ease-in-out;
+//     }
+//   }
+
+
+// =================================================End_Section_Facts===========================================
 // =================================================================MediaScreens==================================
 @media (max-width: 1920px){
 #section1{
     width: 1920px;
 }
-.tabcontent{
-  right: 38%;
-}
 .container{
       max-width: 1920px;
+}
+.Store-ShopImg{
+  width: 600px;
 }
 }
