@@ -215,6 +215,14 @@ a{
   margin-top: 15px;
 }
 // ===========================================Section Store=====================================================================
+// #sectionStore{
+//   background-color: #FFFFEF;
+//   border-radius: 20px;
+//   -webkit-border-radius: 20px;
+//   -moz-border-radius: 20px;
+//   -ms-border-radius: 20px;
+//   -o-border-radius: 20px;
+// }
 .Store{
   &-Shop{
     display: flex;
@@ -258,7 +266,10 @@ a{
 }
 // ==============================End store section=======================
 // =================================================Section_Facts===========================================
+
 .sectionInfo{
+  // background-color: #FFFFEF;
+  // border-radius: 5px;
   &-GeneralVip{
     display: flex;
     margin-bottom: 40px;
@@ -351,6 +362,41 @@ a{
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
 }
+&-HangarImg{
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  &:hover{
+  transition: all .2s ease-in-out;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+}
+&-HangarText{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  flex-direction: column;
+  margin-bottom: 70px;
+}
+&-HangarTextLower{
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  font-style: italic;
+  color: black;
+  margin-left: 15px;
+  margin-top: 30px;
+}
 }
 .RulsInfoBorder{
   border: none;
@@ -376,23 +422,6 @@ a{
     -o-transition: 0.75s  ;
 }
 }
-// .btnBuyVip{
-//     width: 150px;
-//     height: 50px;
-//     color: black;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     border-radius: 10px;
-//     overflow: hidden;
-//     border: 2px solid orange;
-//     &:hover{
-//     background-color: orange;
-//     color: white;
-//     transition: all .2s ease-in-out;
-//     }
-//   }
-
 
 // =================================================End_Section_Facts===========================================
 // =================================================================MediaScreens==================================
