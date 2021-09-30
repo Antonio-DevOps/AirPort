@@ -1,7 +1,7 @@
 // ===========================================changebackground===========================================
 $(function(){  
   var i =0;
-  var images = ['../img/imeg0.jpg','../img/imeg1.jpg','../img/imeg2.jpg','../img/imeg3.png','../img/imeg4.png','../img/imeg5.jpg'];
+  var images = ['./img/imeg0.jpg','./img/imeg1.jpg','./img/imeg2.jpg','./img/imeg3.png','./img/imeg4.png','dgi./img/imeg5.jpg'];
   var image = $('#sectionTablo');
   // image.css('background-image', 'url(/img/imeg1.jpg)');
   setInterval(function(){  
