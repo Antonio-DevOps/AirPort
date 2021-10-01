@@ -476,9 +476,9 @@ a{
 }
 &-TechnicalLovertext{
   font-family: "Montserrat", sans-serif;
-    letter-spacing: 1px;
-    font-style: italic;
-    font-weight: 400;
+  letter-spacing: 1px;
+  font-style: italic;
+  font-weight: 400;
 }
 }
 .RulsInfoBorder{
@@ -507,6 +507,78 @@ a{
 }
 
 // =================================================End_Section_Facts===========================================
+// ========================================================Section_B2B============================================
+.B2b{
+  &-General{
+    display: flex;
+  }
+  &-navigation{
+   margin-top: 200px;
+   margin-left: 40px;
+  }
+  &-social{
+    width: 40px;
+    height: 40px;
+    fill: white;
+  }
+  &-section{
+    margin-bottom: 20px;
+  }
+  &-social-Icon{
+    justify-content: space-evenly;
+  }
+}
+.B2b-sectionSecond1{
+  @extend %sectionSecond;
+}
+.B2b-sectionSecond2{
+  @extend %sectionSecond;
+}
+.B2b-sectionSecond3{
+  @extend %sectionSecond;
+}
+%sectionSecond{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-style: italic;
+  background-color: black;
+  opacity: .8;
+}
+.B2b-sectionFerst1{
+  @extend %sectionFerst;
+}
+.B2b-sectionFerst2{
+  @extend %sectionFerst;
+}
+.B2b-sectionFerst3{
+  @extend %sectionFerst;
+}
+.B2b-sectionFerst4{
+  @extend %sectionFerst;
+}
+.B2b-sectionFerst5{
+  @extend %sectionFerst;
+}
+%sectionFerst{
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  letter-spacing: 1px;
+  font-style: italic;
+  font-weight: 500;
+}
+.B2b{
+  &-General{
+    background: url(../img/B2B/joel-jasmin-forestbird-N7WKDfi0yqQ-unsplash.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position-y: center;
+  }
+}
+
+
+// ================================================================End_section=======================================
 // =================================================================MediaScreens==================================
 @media (max-width: 1920px){
 #section1{
