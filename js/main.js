@@ -7,14 +7,16 @@ $(function(){
   setInterval(function(){  
       image.fadeOut(1000, function () {
           image.css('background-image', 'url(' + images[i] +')');
-          image.fadeIn(1000);
+          image.css('transition', 'opacity 500ms linear 0s');
+          image.css('opacity', '1.2');
+          image.fadeIn(900);
       });
       if(i == (images.length - 1)){
           i = 0; 
       } else {
           i++;
       }
-  }, 20000);
+  }, 3000);
 })
 // =============================================================================================
 function opentab(evt, cityName) {

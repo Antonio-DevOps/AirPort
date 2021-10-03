@@ -580,6 +580,115 @@ a{
 
 // ================================================================End_section=======================================
 // =================================================================MediaScreens==================================
+@media (max-width: 375px){
+  .tab{
+    margin-top: 0px;
+  }
+  .headerTerminal{
+    display: none;
+  }
+.sectionTravel{
+  display: none;
+}
+.containerTrevel{
+  width: 350px;
+}
+.container{
+  max-width: 375px !important;
+}
+  #section1{
+  width: 375px !important;
+}
+  #sectionTablo{
+  background-image: url(../img/mobilebackground/imeg376.png);
+  }
+.containerfacts{
+  display: flex;
+  flex-direction: column;
+}
+.w375{
+  width: 350px !important;
+}
+.Store-Shop{
+  flex-direction: column;
+  overflow: hidden;
+}
+.Store-ShopImg{
+  height: 40vh;
+  margin-left: 0px;
+  padding: 0;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+.ba-col-6 {
+  width: 100%; 
+}
+.sectionInfo-GeneralVip{
+  flex-direction: column;
+  overflow: hidden;
+}
+.sectionInfo{
+  display: flex;
+  flex-direction: column;
+  &-GeneralVip{
+    padding: 0;
+  }
+  &-Img{
+  width: 350px;
+  margin-left: 0;
+  padding-left: 0px;
+  padding-right: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+&-HangarGeneral{
+  display: flex;
+  flex-direction: column-reverse;
+}
+&-Excursions{
+  flex-direction: column;
+  padding-left: 0;
+}
+&-ExcursionsImg{
+  padding: 0;
+}
+&-TechnicalSupport{
+  flex-direction: column-reverse;
+}
+&-TechnicalSupportImg{
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+}
+.B2b{
+  &-General{
+  flex-direction: column;
+  }
+  &-Github{
+    margin-top: 30px;
+  }
+  &-navigation{
+    margin-top: 30px;
+    margin-left: 0;
+  }
+  &-social-Icon{
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+.ba-col-3 {
+  width: 100%; 
+}
+}
 @media (max-width: 1920px){
 #section1{
     width: 1920px;

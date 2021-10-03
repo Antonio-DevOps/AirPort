@@ -701,6 +701,168 @@ a {
   background-position-y: center;
 }
 
+@media (max-width: 375px) {
+  .tab {
+    margin-top: 0px;
+  }
+
+  .headerTerminal {
+    display: none;
+  }
+
+  .sectionTravel {
+    display: none;
+  }
+
+  .containerTrevel {
+    width: 350px;
+  }
+
+  .container {
+    max-width: 375px !important;
+  }
+
+  #section1 {
+    width: 375px !important;
+  }
+
+  #sectionTablo {
+    background-image: url(../img/mobilebackground/imeg376.png);
+  }
+
+  .containerfacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .w375 {
+    width: 350px !important;
+  }
+
+  .Store-Shop {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    overflow: hidden;
+  }
+
+  .Store-ShopImg {
+    height: 40vh;
+    margin-left: 0px;
+    padding: 0;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+  }
+
+  .ba-col-6 {
+    width: 100%;
+  }
+
+  .sectionInfo-GeneralVip {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    overflow: hidden;
+  }
+
+  .sectionInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sectionInfo-GeneralVip {
+    padding: 0;
+  }
+  .sectionInfo-Img {
+    width: 350px;
+    margin-left: 0;
+    padding-left: 0px;
+    padding-right: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+  }
+  .sectionInfo-HangarGeneral {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .sectionInfo-Excursions {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 0;
+  }
+  .sectionInfo-ExcursionsImg {
+    padding: 0;
+  }
+  .sectionInfo-TechnicalSupport {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .sectionInfo-TechnicalSupportImg {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .B2b-General {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .B2b-Github {
+    margin-top: 30px;
+  }
+  .B2b-navigation {
+    margin-top: 30px;
+    margin-left: 0;
+  }
+  .B2b-social-Icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+
+  .ba-col-3 {
+    width: 100%;
+  }
+}
 @media (max-width: 1920px) {
   #section1 {
     width: 1920px;
