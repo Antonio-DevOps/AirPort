@@ -1,26 +1,72 @@
 // ===========================================changebackground===========================================
-$(function(){  
-  var i =0;
-  var images = ['./img/imeg0.jpg','./img/imeg1.jpg','./img/imeg2.jpg','./img/imeg3.png','./img/imeg4.png','./img/imeg5.jpg'];
-  var image = $('#sectionTablo');
-  // image.css('background-image', 'url(/img/imeg1.jpg)');
-  setInterval(function(){  
-      image.fadeOut(1000, function () {
-          image.css('background-image', 'url(' + images[i] +')');
-          image.css('transition', 'opacity 500ms linear 0s');
-          image.css('opacity', '1.2');
-          image.fadeIn(900);
-      });
-      if(i == (images.length - 1)){
-          i = 0; 
-      } else {
-          i++;
-      }
-  }, 3000);
-})
+// $(function(){  
+//   let i = 0;
+//   let images = ['./img/imeg0.jpg','./img/imeg1.jpg','./img/imeg2.jpg','./img/imeg3.png','./img/imeg4.png','./img/imeg5.jpg'];
+//   let fonts = ['#000', '#ffa500', '#ffa500', '#000', '#000', '#ffa500'];
+//   let image = $('#sectionTablo');
+//   let fontStyle = $('.navBar');
+//   setInterval(function(){  
+//       image.fadeOut(1200, function () {
+//           image.css('background-image', 'url(' + images[i] + ')');
+//           image.css('transition', 'opacity 900ms linear 0s');
+//           image.css('opacity', '1.2');
+//           image.fadeIn(1200);
+//       });
+//       fontStyle.fadeOut(900, function (){
+//           fontStyle.css('color', fonts[i]);
+//           fontStyle.fadeIn(900);
+//       });
+//       if(i == (images.length - 1)){
+//           i = 0; 
+//       } else {
+//           i++;                                   fix code
+//       }
+//   }, 5000);
+// })
+
+// $(function(){  
+//   var i = 0;
+//   var images = ['./img/imeg0.jpg','./img/imeg1.jpg','./img/imeg2.jpg','./img/imeg3.png','./img/imeg4.png','./img/imeg5.jpg'];
+//   var image = $('#sectionTablo');
+//   // image.css('background-image', 'url(/img/imeg1.jpg)');
+//   setInterval(function(){  
+//       image.fadeOut(1000, function () {
+//           image.css('background-image', 'url(' + images[i] + ')');
+//           image.css('transition', 'opacity 900ms linear 0s');
+//           image.css('opacity', '0.75');
+//           fontStyle.css('color:(' + fonts[i] + ')');
+//           image.fadeIn(1000);
+//       });
+//       if(i == (images.length - 1)){
+//           i = 0; 
+//       } else {
+//           i++;
+//       }
+//   }, 3000);
+// })
+
+// $(function(){
+//   let j = 0;
+//   var fontStyle = $('.navBar');
+//   var fonts = ['#000', '#ffa500', '#ffa500', '#000', '#000', '#ffa500'];
+
+//   setFonts(function(){
+//     fontStyle.fadeOut(1000, function (){
+
+//     fontStyle.css('color:(' + fonts[i] + ')');
+
+//     fontStyle.fadeIn(1000);
+//     });
+//     if(j ==(fonts.length - 1 )){
+//       j = 0;
+//     }else{
+//       j++;
+//     }
+//   }, 3000);
+// })
 // =============================================================================================
 function opentab(evt, cityName) {
-    var i, tabcontent, tablinks;
+    let i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
       tabcontent[i].style.display = "none";

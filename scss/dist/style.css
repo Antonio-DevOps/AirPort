@@ -1,0 +1,837 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,300;1,400&family=Ubuntu:wght@500&display=swap");
+* {
+  box-sizing: border-box;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: orange;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+}
+
+.header > .slider-1,
+.header > .sslider-2,
+.header > .slider-3,
+.header > .sslider-4,
+.header > .sslider-5,
+.header > .sslider-6 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  background-size: 1445px 755px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.slider {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  background-size: 1445px 755px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.slider-1 {
+  background-image: url(../img/imeg0.jpg);
+  -webkit-animation: slide1 23.5s;
+  -webkit-animation-iteration-count: infinite;
+}
+.slider-2 {
+  background-image: url(../img/imeg1.jpg);
+  -webkit-animation: slide2 23.5s;
+  -webkit-animation-iteration-count: infinite;
+}
+.slider-3 {
+  background-image: url(../img/imeg2.jpg);
+  -webkit-animation: slide2 23.5s;
+  -webkit-animation-iteration-count: infinite;
+}
+.slider-4 {
+  background-image: url(../img/imeg3.png);
+  -webkit-animation: slide2 23.5s;
+  -webkit-animation-iteration-count: infinite;
+}
+.slider-5 {
+  background-image: url(../img/imeg4.png);
+  -webkit-animation: slide2 23.5s;
+  -webkit-animation-iteration-count: infinite;
+}
+.slider-6 {
+  background-image: url(../img/imeg5.jpg);
+  -webkit-animation: slide2 23.5s;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes slide1 {
+  0% {
+    opacity: 1;
+  }
+  /*2.5% {opacity: 1;}*/
+  22.5% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slide2 {
+  22.5% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  27.5% {
+    opacity: 1;
+  }
+  47.5% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes slide3 {
+  47.5% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  52.5% {
+    opacity: 1;
+  }
+  72.5% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes slide4 {
+  0% {
+    opacity: 0;
+  }
+  72.5% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  77.5% {
+    opacity: 1;
+  }
+  97.5% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+#sectionTablo {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  position: relative;
+}
+
+.headerNav {
+  padding-top: 40px;
+  display: flex;
+}
+
+.logo {
+  margin-left: 100px;
+}
+
+.headerTerminal {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.logoimg {
+  height: 100px;
+  width: 100px;
+}
+
+.navBar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.navBarbtn {
+  margin-right: 35px;
+}
+
+.tab {
+  margin-top: 40px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tableFlight {
+  width: 500px;
+  height: 300px;
+}
+
+.headertable {
+  text-transform: uppercase;
+  padding: 10px 10px;
+  font-weight: 500;
+  color: #242249;
+  font-size: 12px;
+}
+
+.flightTommorow {
+  font-size: small;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  color: whitesmoke;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+  border-radius: 10px;
+  opacity: 0.5;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+.tabs-navi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  background-color: aliceblue;
+  opacity: 0.9;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.flightStatus {
+  height: 50px;
+}
+
+.Travel-container {
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+}
+.Travel-uppercontainer {
+  display: flex;
+}
+.Travel-lowercontainer {
+  display: flex;
+}
+
+.sectionTravel {
+  display: none;
+}
+
+.containerTrevel {
+  height: 520px;
+  width: 450px;
+}
+
+.imgContent, .infoTreve {
+  height: 250px;
+  width: 250px;
+}
+
+.infoTrevel {
+  margin-top: 1rem;
+  width: 250px;
+  height: 250px;
+  background-color: transparent;
+}
+
+.hedline {
+  margin: 2em;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner svg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.banner svg path {
+  fill: #fff;
+}
+
+.FactsOfAirPort {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.containerfacts {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.sectionfacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.infoProgress {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  font-family: "Skyfont", sans-serif;
+  text-shadow: 4px 4px 4px #aaa;
+  font-size: 2rem;
+}
+
+.imgprogresa {
+  height: 200px;
+  width: 200px;
+  border-radius: 150px;
+}
+.imgprogresa:hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
+  overflow: hidden;
+}
+
+.mt5 {
+  margin-top: 15px;
+}
+
+.Store-Shop {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.Store-Title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+.Store-Title::after {
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: black;
+}
+.Store-ShopImg {
+  margin-top: 30px;
+  border-radius: 20px;
+  width: 500px;
+  margin-left: 30px;
+}
+.Store-ShopUpper {
+  font-family: "Montserrat", sans-serif;
+}
+.Store-ShopUpperline {
+  background-color: black;
+  width: 50px;
+  height: 1px;
+}
+.Store-Shoplower {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  font-style: italic;
+  color: black;
+}
+.Store-ul {
+  margin-top: 10px;
+}
+.Store-li {
+  margin-top: 10px;
+}
+
+.sectionInfo-GeneralVip {
+  display: flex;
+  margin-bottom: 40px;
+}
+.sectionInfo-UpperText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  flex-direction: column;
+}
+.sectionInfo-UpperText::after {
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: black;
+}
+.sectionInfo-LowwerText {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  font-style: italic;
+  color: black;
+}
+.sectionInfo-LowwerText_P {
+  margin-left: 10px;
+}
+.sectionInfo-ofService {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+.sectionInfo-ofServiceli {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.sectionInfo-ofServicetitle {
+  margin-left: 20px;
+}
+.sectionInfo-Price {
+  width: 90%;
+  height: 30px;
+  border-bottom: 1px solid #e3e3e3;
+  margin-bottom: 20px;
+}
+.sectionInfo-PriceVIP {
+  border: 1px solid #e3e3e3;
+}
+.sectionInfo-PriceVIPname {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  border-bottom: 1px solid #e3e3e3;
+}
+.sectionInfo-PriceVIPnameTextSize {
+  margin: 10px;
+}
+.sectionInfo-PriceVIPnameText {
+  width: 280px;
+  margin: 10px;
+  color: #767676;
+}
+.sectionInfo-nameTerminal {
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 600;
+}
+.sectionInfo-nameFly {
+  width: 160px;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+.sectionInfo-VipInfo {
+  flex-direction: column;
+}
+.sectionInfo-RulsInfo {
+  flex-direction: column;
+  border-left: 1px solid #e3e3e3;
+}
+.sectionInfo-PriceInfo {
+  font-size: 0.7rem;
+}
+.sectionInfo-btnVip {
+  margin-bottom: 10px;
+}
+.sectionInfo-Img {
+  width: 500px;
+  height: 300px;
+  margin-top: 10%;
+  margin-left: 30px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.sectionInfo-HangarImg {
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  filter: brightness(0.7);
+}
+.sectionInfo-HangarImg:hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  filter: none;
+  -webkit-filter: none;
+}
+.sectionInfo-HangarText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  flex-direction: column;
+  margin-bottom: 70px;
+}
+.sectionInfo-HangarTextLower {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  font-style: italic;
+  color: black;
+  margin-left: 15px;
+  margin-top: 30px;
+}
+.sectionInfo-ExcursionsUppertext {
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+}
+.sectionInfo-ExcursionsUppertext::after {
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: black;
+}
+.sectionInfo-ExcursionsLovertext {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+.sectionInfo-ExcursionsImg {
+  width: 500px;
+  transition: 0.3s;
+  transition: all 0.5s ease;
+  filter: brightness(0.7);
+  border-radius: 15px;
+}
+.sectionInfo-ExcursionsImg:hover {
+  transform: scale(1.1);
+  overflow: hidden;
+  filter: none;
+  -webkit-filter: none;
+}
+.sectionInfo-TechnicalSupportImg {
+  width: 500px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  border-radius: 15px;
+  transition: 0.3s;
+  transition: all 0.5s ease;
+  filter: brightness(0.7);
+}
+.sectionInfo-TechnicalSupportImg:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  filter: none;
+  overflow: hidden;
+}
+.sectionInfo-TechnicalSupport {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: #000;
+}
+.sectionInfo-TechnicalSupportUppertext {
+  font-family: "Montserrat", sans-serif;
+  flex-direction: column;
+}
+.sectionInfo-TechnicalSupportUppertext::after {
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: black;
+}
+.sectionInfo-TechnicalLovertext {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.RulsInfoBorder {
+  border: none;
+}
+
+.btnBuyVip {
+  width: 150px;
+  height: 50px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid orange;
+  font-size: 20px;
+  background-color: white;
+}
+.btnBuyVip:hover {
+  box-shadow: 2.5px 2.5px 0 2.5px white, -2.5px -2.5px 0 2.5px white, 0 0 0 2px white inset, 10px 10px 0 10px orange, -10px -10px 0 10px orange;
+  transition: 0.75s;
+  -webkit-transition: 0.75s;
+  -moz-transition: 0.75s;
+  -ms-transition: 0.75s;
+  -o-transition: 0.75s;
+}
+
+.B2b-General {
+  display: flex;
+}
+.B2b-navigation {
+  margin-top: 200px;
+  margin-left: 40px;
+}
+.B2b-social {
+  width: 40px;
+  height: 40px;
+  fill: white;
+}
+.B2b-section {
+  margin-bottom: 20px;
+}
+.B2b-social-Icon {
+  justify-content: space-evenly;
+}
+
+.B2b-sectionSecond1, .B2b-sectionSecond2, .B2b-sectionSecond3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-style: italic;
+  background-color: black;
+  opacity: 0.8;
+}
+
+.B2b-sectionFerst1, .B2b-sectionFerst2, .B2b-sectionFerst3, .B2b-sectionFerst4, .B2b-sectionFerst5 {
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  letter-spacing: 1px;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.B2b-General {
+  background: url(../img/B2B/joel-jasmin-forestbird-N7WKDfi0yqQ-unsplash.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  background-position-y: center;
+}
+
+@media (max-width: 375px) {
+  .tab {
+    margin-top: 0px;
+  }
+
+  .headerTerminal {
+    display: none;
+  }
+
+  .sectionTravel {
+    display: none;
+  }
+
+  .containerTrevel {
+    width: 350px;
+  }
+
+  .container {
+    max-width: 375px !important;
+  }
+
+  #section1 {
+    width: 375px !important;
+  }
+
+  #sectionTablo {
+    background-image: url(../img/mobilebackground/imeg376.png);
+  }
+
+  .containerfacts {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .w375 {
+    width: 350px !important;
+  }
+
+  .Store-Shop {
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .Store-ShopImg {
+    height: 40vh;
+    margin-left: 0px;
+    padding: 0;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+  }
+
+  .ba-col-6 {
+    width: 100%;
+  }
+
+  .sectionInfo-GeneralVip {
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .sectionInfo {
+    display: flex;
+    flex-direction: column;
+  }
+  .sectionInfo-GeneralVip {
+    padding: 0;
+  }
+  .sectionInfo-Img {
+    width: 350px;
+    margin-left: 0;
+    padding-left: 0px;
+    padding-right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+  }
+  .sectionInfo-HangarGeneral {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .sectionInfo-Excursions {
+    flex-direction: column;
+    padding-left: 0;
+  }
+  .sectionInfo-ExcursionsImg {
+    padding: 0;
+  }
+  .sectionInfo-TechnicalSupport {
+    flex-direction: column-reverse;
+  }
+  .sectionInfo-TechnicalSupportImg {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .B2b-General {
+    flex-direction: column;
+  }
+  .B2b-Github {
+    margin-top: 30px;
+  }
+  .B2b-navigation {
+    margin-top: 30px;
+    margin-left: 0;
+  }
+  .B2b-social-Icon {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .ba-col-3 {
+    width: 100%;
+  }
+}
+@media (max-width: 1920px) {
+  #section1 {
+    width: 1920px;
+  }
+
+  .container {
+    max-width: 1920px;
+  }
+
+  .Store-ShopImg {
+    width: 600px;
+  }
+}
