@@ -1,3 +1,208 @@
+  // gallery
+//   $(document).ready(function () {
+//     $('.overlay-btn').on('click', function () {
+//         let imgSrc = $(this).attr('src'),
+//             $modalbtn = $('<img>');
+
+//         $modalImage.attr('src', imgSrc);
+
+
+//         $('.ba-modal-content-wrapper').append($modalImage)
+//         openModal();
+//     })
+// });
+
+// let openModal = function () {
+//     $('.ba-modal').addClass('ba-modal--open');
+//     $('body').addClass('ba-modal-is-open');
+
+//     $(document).on('keydown', function (e) {
+//         if (e.keyCode == 27) {
+//             closeModal();
+
+//         }
+//     });
+// }
+
+// let closeModal = function () {
+//     $('.ba-modal').removeClass('ba-modal--open');
+//     $('body').removeClass('ba-modal-is-open');
+//     $('.ba-modal-content-wrapper').empty();
+//     $(document).off('keydown', closeModal);
+// }
+
+// $('.ba-modal-close').on('click', closeModal);
+
+
+// // ==================Popup=============================
+
+// const popupLinks = document.querySelectorAll(".overlay-btn");
+// const body = document.querySelector('body');
+// const lockPadding = document.querySelectorAll(".lock-padding");
+
+// let unlock = true;
+
+// const timeout = 800;
+
+// // timeout- должно совпадать с transition
+
+// if (popupLinks.length > 0) {
+//   for (let i = 0; i < popupLinks.length; i++) {
+//     const popupLink = popupLinks[i];
+//     popupLink.addEventListener("click", function(e){
+//       const popupName = popupLink.getAttribute('href').replace('#', " ");
+//       const curentPopup = document.getElementById(popupName);
+//       popupOpen(curentPopup);
+//       e.preventDefault();
+//     });
+//   }
+// }
+
+// const popupCloseIcon = document.querySelectorAll('.Popup-Close');
+// if (popupCloseIcon.length > 0) {
+//   for (let i = 0; i < popupCloseIcon.length; i++) {
+//     const el = popupCloseIcon[i];
+//     el.addEventListener('click', function (e) {
+//       popupClose(el.closest('popup'));
+//       e.preventDefault();
+//     });
+//   }
+// }
+
+// // =============Функция для открытия попапа через попап==========
+
+
+
+// function popupOpen(curentPopup) {
+//   if(curentPopup && unlock) {
+//     const popupActive = document.querySelector('.popup.open');
+//     if (popupActive) {
+//       popupClose(popupActive, false);
+//     } else{
+//       bodyLock();
+//     }
+//     curentPopup.classList.add('open');
+//     curentPopup.addEventListener("click", function (e){
+//       if (!e.target.closest('.popup__content')) {
+//         popupClose(e.target.closest('.popup'));
+//       }
+//     });
+//   }
+// }
+// function popupClose(popupActive, doUnlock = true) {
+//   if (unlock) {
+//     popupActive.classList.remove('open');
+//     if (doUnlock){
+//       bodyLock();
+//     }
+//   }
+// }
+// // =======Функция для того что бы при нажатии не смещалась кнопка в права=============
+// function bodyLock(){
+//   const lockPaddingValue = window.innerWidth - document.querySelector('.wrapper').offsetWidth + 'px';
+
+
+//     if(lockPadding.length > 0) {
+//   for(let i = 0; i < lockPadding.length; i++) {
+//     const el = lockPadding[i];
+//     el.style.paddingRight = lockPaddingValue;
+//   }
+// }
+//   body.style.paddingRight = lockPaddingValue;
+//   body.classList.add('lock');
+
+//   unlock = false;
+//   setTimeout(function () {
+//     unlock = true;
+//   }, timeout);
+// }
+
+// function bodyUnlock() {
+//   setTimeout(function (){
+//     if(lockPadding.length > 0) {
+//     for (let i = 0; i < lockPadding.length; i++) {
+//       const el = lockPadding[i];
+//       el.style.paddingRight = '0px';
+//     }
+//   }
+//     body.style.paddingRight = '0px';
+//     body.classList.remove('lock');
+//   },timeout);
+
+//   unlock = false;
+//   setTimeout(function () {
+//     unlock = true;
+//   }, timeout);
+// }
+
+// document.addEventListener('keydown', function (e) {
+//   if (e.which ===27) {
+//     const popupActive = document.querySelector('.popup.open');
+//     popupClose(popupActive);
+//   }
+// })
+// (function (){
+//   //проверяем поддержку
+//   if(!Element.prototype.closest){
+//     //реализуем
+//     Element.prototype.closest = function (css) {
+//       var node = this;
+//       while (node) {
+//         if (node.matches(css)) return node;
+//         else node = node.parentElement;
+//       }
+//       return null;
+//     };
+//   }
+// })();
+// (function () {
+//   //проверяем поддержку
+//   if (!Element.prototype.matches) {
+//     //определяем свойство
+//     Element.prototype.matches = Element.webkitMatchesSelector ||
+//       Element.webkitMatchesSelector  ||
+//       Element.prototype.mozMatchesSelector ||
+//       Element.prototype.msMatchesSelector;
+//   }
+// })();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // ===========================================changebackground===========================================
 // $(function(){  
 //   let i = 0;
@@ -78,47 +283,10 @@ function opentab(evt, cityName) {
     document.getElementById(cityName).style.display = "flex";
     evt.currentTarget.className += " active";
   }
+// =======================================================================================
+
+let btn = document.getElementsByClassName("overlayBtn");
+let Baku = document.getElementById("Baku");
+let i = 0;
+
   // =====================Slider===================
-  $('.sliderNewsforTravel').slick({
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    arrows:false,
-    centerPadding: true,
-    responsive: [
-      {
-        breakpoint: 1920,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          infinite: true,
-        }
-      },
-      {
-        breakpoint: 1170,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      },
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
-    ]
-  });
-  $('.StoreDuty').slick({
-    dots: true,
-    infinite: true,
-    speed: 500,
-    fade: true,
-    cssEase: 'linear'
-  });
-  

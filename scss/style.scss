@@ -11,6 +11,13 @@ $colorAfter: black;
     box-sizing: border-box;
     list-style: none;
 }
+
+body.lock{
+  overflow: hidden;
+}
+
+
+
 a{
     text-decoration: none;
     color: orange;
@@ -902,11 +909,82 @@ a{
 
 // ================================================================End_section=======================================
 
+// ===========================================================Modal`s windows========================================
+.Popup{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  opacity: 1;
+  visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: rgba(0, 0, 0, .96);
+  :target{
+    opacity: 1;
+    visibility: visible;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+  &-Baku__body{
+    min-height: 100%;
+    width: 100%;
+    padding: 0;
+  }
+  &-Baku-contant{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  max-width: 800px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  opacity: 1;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  background: transparent;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: rgba(0, 0, 0, 0.911);
+}
+  &-img{
+    width: 60%;
+    margin-bottom: 40px;
+    opacity: 1;
+    background-color: black;
+  }
+  &-text{
+    width: 60%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-style: revert;
+    color: orange;
+    letter-spacing: 1px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+&-Close{
+position: absolute;
+right: 5%;
+top: 5%;
+height: 40px;
+width: 40px;
+background-color: transparent;
+border: 1px solid #ffa500;
+color: #ffa500;
+border-radius: 50%;
+align-items: center;
+display: flex;
+justify-content: center;
+font-weight: bold;
+z-index: 1;
+font-size: 1.8rem;
+}
+}
 
-
-
-
-
+// =============================================================End`s modals windows=================================
 
 // =================================================================MediaScreens==================================
 @media (max-width: 375px){
