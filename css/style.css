@@ -9,6 +9,10 @@ body.lock {
   overflow: hidden;
 }
 
+p {
+  text-indent: 1.5rem;
+}
+
 a {
   text-decoration: none;
   color: orange;
@@ -1279,12 +1283,19 @@ a {
 }
 .Popup-img {
   width: 60%;
+  height: 50%;
+  margin-top: 20px;
   margin-bottom: 40px;
   opacity: 1;
   background-color: black;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 .Popup-text {
-  width: 60%;
+  width: 70%;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-style: revert;
@@ -1315,6 +1326,10 @@ a {
   font-weight: bold;
   z-index: 1;
   font-size: 1.8rem;
+}
+
+.open {
+  opacity: 1;
 }
 
 @media (max-width: 375px) {

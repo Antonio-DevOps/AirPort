@@ -141,6 +141,11 @@
 //     popupClose(popupActive);
 //   }
 // })
+
+
+
+
+// //полифилы
 // (function (){
 //   //проверяем поддержку
 //   if(!Element.prototype.closest){
