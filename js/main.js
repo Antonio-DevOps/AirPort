@@ -275,9 +275,9 @@
 //   }, 3000);
 // })
 // =============================================================================================
-function opentab(evt, cityName) {
+function opentab(evt, tabsName) {
     let i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
+    tabcontent = document.getElementsByClassName("TabloBox");
     for (i = 0; i < tabcontent.length; i++) {
       tabcontent[i].style.display = "none";
     }
@@ -285,7 +285,7 @@ function opentab(evt, cityName) {
     for (i = 0; i < tablinks.length; i++) {
       tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
-    document.getElementById(cityName).style.display = "flex";
+    document.getElementById(tabsName).style.display = "flex";
     evt.currentTarget.className += " active";
   }
 // =======================================================================================
@@ -293,5 +293,19 @@ function opentab(evt, cityName) {
 let btn = document.getElementsByClassName("overlayBtn");
 let Baku = document.getElementById("Baku");
 let i = 0;
-
+// =============================================================================================
+function opentab(evt, tabsName) {
+  let i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("TabloBox");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabsName).style.display = "flex";
+  evt.currentTarget.className += " active";
+}
+// =======================================================================================
   // =====================Slider===================

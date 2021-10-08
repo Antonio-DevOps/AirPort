@@ -15,7 +15,7 @@ p {
 
 a {
   text-decoration: none;
-  color: orange;
+  color: #ffa600;
   cursor: pointer;
 }
 
@@ -62,44 +62,44 @@ a {
 
 .slider-1 {
   background-image: url(../img/imeg0.jpg);
-  animation: slide1 23.5s;
-  -webkit-animation: slide1 23.5s;
+  animation: slide1 45.5s;
+  -webkit-animation: slide1 45.5s;
   animation-iteration-count: infinite;
   -webkit-animation-iteration-count: infinite;
   color: #242249;
 }
 .slider-2 {
   background-image: url(../img/imeg1.jpg);
-  animation: slide2 23.5s;
-  -webkit-animation: slide2 23.5s;
+  animation: slide2 45.5s;
+  -webkit-animation: slide2 45.5s;
   animation-iteration-count: inherit;
   -webkit-animation-iteration-count: infinite;
 }
 .slider-3 {
   background-image: url(../img/imeg2.jpg);
-  animation: slide3 23.5s;
-  -webkit-animation: slide3 23.5s;
+  animation: slide3 45.5s;
+  -webkit-animation: slide3 45.5s;
   animation-iteration-count: inherit;
   -webkit-animation-iteration-count: infinite;
 }
 .slider-4 {
   background-image: url(../img/imeg3.png);
-  animation: slide4 23.5s;
-  -webkit-animation: slide4 23.5s;
+  animation: slide4 45.5s;
+  -webkit-animation: slide4 45.5s;
   animation-iteration-count: inherit;
   -webkit-animation-iteration-count: infinite;
 }
 .slider-5 {
   background-image: url(../img/imeg4.png);
-  animation: slide5 23.5s;
-  -webkit-animation: slide5 23.5s;
+  animation: slide5 45.5s;
+  -webkit-animation: slide5 45.5s;
   animation-iteration-count: inherit;
   -webkit-animation-iteration-count: infinite;
 }
 .slider-6 {
   background-image: url(../img/imeg5.jpg);
-  animation: slide6 23.5s;
-  -webkit-animation: slide6 23.5s;
+  animation: slide6 45.5s;
+  -webkit-animation: slide6 45.5s;
   animation-iteration-count: inherit;
   -webkit-animation-iteration-count: infinite;
 }
@@ -397,23 +397,6 @@ a {
           align-items: center;
 }
 
-.tableFlight {
-  width: 500px;
-  height: 300px;
-}
-
-.headertable {
-  text-transform: uppercase;
-  padding: 10px 10px;
-  font-weight: 500;
-  color: #242249;
-  font-size: 12px;
-}
-
-.flightTommorow {
-  font-size: small;
-}
-
 /* Style the buttons inside the tab */
 .tab button {
   background-color: inherit;
@@ -456,20 +439,58 @@ a {
 }
 
 /* Style the tab content */
-.tabcontent {
+.TabloBox {
+  width: 950px;
   display: none;
-  padding: 6px 12px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
   background-color: aliceblue;
-  opacity: 0.9;
+  opacity: 0.79;
   border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
+  padding-bottom: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
 }
-
-.flightStatus {
-  height: 50px;
+.TabloBox-General {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.TabloBox-fonts {
+  color: #ffa500;
+}
+.TabloBox-item {
+  width: 110px;
+  padding: 10px;
+}
+.TabloBox-status {
+  width: 150px;
+}
+.TabloBox-timedata2 ::after {
+  content: "10.09.2021";
+  display: block;
+  font-size: small;
+}
+.TabloBox-timedata3 ::after {
+  content: "10.09.2021";
+  display: block;
+  font-size: small;
 }
 
 .portfolio-items > div {
