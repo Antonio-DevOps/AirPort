@@ -1030,7 +1030,7 @@ font-size: 1.8rem;
 
 //====================================================================================================================
 // =================================================================MediaScreens==================================
-@media (max-width: 375px){
+@media (max-width: 640px){
   .ba-col-3{
     width: 25% !important;
   }
@@ -1058,9 +1058,9 @@ font-size: 1.8rem;
   #section1{
   width: 375px !important;
 }
-  #sectionTablo{
-  background-image: url(../img/mobilebackground/imeg376.png);
-  }
+  // #sectionTablo{
+  // background-image: url(../img/mobilebackground/imeg376.png);
+  // }
 .containerfacts{
   display: flex;
   flex-direction: column;

@@ -1353,7 +1353,7 @@ a {
   opacity: 1;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 640px) {
   .ba-col-3 {
     width: 25% !important;
   }
@@ -1388,10 +1388,6 @@ a {
 
   #section1 {
     width: 375px !important;
-  }
-
-  #sectionTablo {
-    background-image: url(../img/mobilebackground/imeg376.png);
   }
 
   .containerfacts {
